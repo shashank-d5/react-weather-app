@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+.sunny {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+}
+
+.rainy {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.cloudy {
+  background: linear-gradient(to right, #d7d2cc, #304352);
+}
+
+.clear {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+.history-buttons {
+  display: flex;
+  flex-wrap: wrap;       /* Allow buttons to wrap on smaller screens */
+  gap: 10px;             /* Space between buttons */
+  margin-top: 10px;      /* Space above the history buttons */
+  justify-content: center; /* Center align the buttons */
+}
+
+.history-buttons button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.history-buttons button:hover {
+  background-color: #0056b3;
+}
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.temperature {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #222;
+}
+
+.temperature span {
+  font-size: 2.5rem;
+  margin-left: 5px;
+  font-weight: 700;
+  color: #666;
+}
+
+.realfeel {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.weather-details div {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.weather-details div span:last-child {
+  font-weight: 700;
+  color: #000;
+}
+/* GET WEATHER button */
+button.get-weather {
+  background-color: #28a745; /* Green */
+  font-weight: bold;
+}
+
+button.get-weather:hover {
+  background-color: #218838;
+}
+.weather-details {
+  color: #f0f0f0;  /* lighter text */
+}
+
+.weather-details div span {
+  color: #e0e0e0;  /* key text */
+}
+
+.weather-details div span:last-child {
+  font-weight: 700;
+  color: #ffffff;  /* value text */
+}
